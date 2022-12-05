@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+:root{
+  --naranja : rgb(255, 195, 43);
+  
+  
+}
+
+body{
+  background-color: black;
+  font-family: 'Oswald', sans-serif;
+}
+
+.a{
+  color: white;
+}
+
+.seleccionado{
+  color: var(--naranja) ;
+}
+
+.menu{
+  font-size: 23px;
+  border-bottom: 3px solid gray;
+}
+
+
+
+/*
++--------------------------------+
+|                                |
+|                                |
+|        Pagina principal        |
+|                                |
+|                                |
++--------------------------------+
+*/
+
+.contenido{
+  font-size: 25px;
+  text-align: center;
+  position: relative;
+  height: 30rem;
+  border-radius: 3px;
+  border: 2px solid rgb(221, 210, 210);
+  background-color: var(--naranja);
+}
+.boton{
+  padding: 5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  color: aliceblue;
+  border: 2px solid rgb(221, 210, 210);
+  background-color: black;
+}
+.boton:hover {
+  border-color: #f88222;
+  background-color: wheat;
+  color: black;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);
+}
+.animacion {
+  animation-duration: 3s;
+  animation-name: bajar;
+  top: 85%;
+  left: 50%;
+  padding: 1rem;
+}
+
+.texto{
+  position: absolute;
+  top: 30%;
+  left: 0%;
+}
+
+.subtitulo{
+  font-size: 30px;
+  animation-duration: 3s;
+  animation-name: textoan;
+}
+
+@keyframes textoan {
+  from {
+    margin-left: 100%;
+    width: 300%
+  }
+
+  to {
+    margin-left: 0%;
+    width: 50%;
+    text-align: center;
+  }
+}
+
+@keyframes bajar {
+  from {
+    top: 50%;
+    left: 50%;
+    padding: 5rem;
+  }
+
+  to {
+    top: 85%;
+    left: 50%;
+    padding: 1rem;
+  }
+}
+
+/*
++--------------------------------+
+|                                |
+|                                |
+|        Pagina peliculas        |
+|                                |
+|                                |
++--------------------------------+
+*/
+
+.busqueda{
+  color: aliceblue;
+  border: 2px solid rgb(221, 210, 210);
+  background-color: black;
+}
+
+.busqueda:hover {
+  border-color: #f88222;
+  background-color: wheat;
+  color: black;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);
+}
+
+.titulo{
+  color: aliceblue;
+}
+
+.input:focus{
+  border-color: #f88222;
+  color: black;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);
+}
+
+.txt{
+  font-size: 15px;
+}
+
+.info-temp{
+  border: 2px solid snow;
+}
+
+.card{
+  border: 1px solid var(--naranja);
+  background-color: var(--naranja);
+}
+.sinopsis{
+  font-size: 19px;
+}
+
+#anim_paises{
+  animation-duration: 3s;
+  animation-name: paises_texto;
+}
+
+@keyframes paises_texto {
+  from {
+    margin-left: 100%;
+    width: 300%
+  }
+
+  to {
+    margin-left: 0%;
+    width: 50%;
+    text-align: center;
+  }
+}
